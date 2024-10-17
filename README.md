@@ -38,28 +38,28 @@ For extensive information about the project motivation, implementation and resul
 
 - 📂 `plot_graph_result`: 
     -  📜 `plot_results.ipynb` : Plots the results (using the training from 📜 `train_params.py`). We put on the repository on `result` the result that we get for different training.
-    
-## UTAE Model
-
-## Parameter selection: 
 
 
 ## Prerequisites
-The external libraries that we use were:
-    - torch and torchnet to implement deep learning model
-    - tensorflow to get augmented data
+Latest versions of :
+- pyTorch
+- Tensorflow
+- Tqdm
+- Albumentations
 
 ## Run Instructions 
 
-Initially, the data are stored in tiff file in the folder "cropped". To get access to our final dataset, you have to run image_preprocessing/split_data_crop_set_3.py, which extract the set of images and split them on train and test set and store them in "dtsub" folder, and image_preprocessing/data_augmentation.py, which creates more data on the training set.
+Data is stored in tiff file in 📂 `cropped`. To get access to our final dataset, you have to run image_preprocessing/split_data_crop_set_3.py, which extract the set of images and split them on train and test set and store them in "dtsub" folder, and image_preprocessing/data_augmentation.py, which creates more data on the training set.
 
-Our model is based on the grouping of time-series images. In our case, we used `train_params.py` to find the best groupby value and mask position to predict. We used this on augmented data, and found that `groupb`=7 and `maskpos`=6 give us the best result, evaluted on 100 epochs. The other hyperparameters used are indicated as default ones in the `train_argparse.py` file. The maskpos is highly suceptible to stochastic noise, so it is not an absolute result. To reproduce these data, run the following command: 
+Our model is based on the grouping of time-series images. To reproduce our results, run the following command: 
 
     python train_argparse.py --epochs 100 --groupby 7 --maskpos 6
 
-## Results
+Adapt the command accordingly for the epochs, groupby, and maskpos arguments of your linking.
 
+## Results 
 
+In our case, we used `train_params.py` to find the best groupby value and mask position to predict. We used this on augmented data, and found that `groupby`=7 and `maskpos`=6 give us the best result, evaluted on 100 epochs. The other hyperparameters used are indicated as default ones in the `train_argparse.py` file. The maskpos is highly suceptible to stochastic noise, so it is not an absolute result.
 
 ## Reference
 
