@@ -3,7 +3,7 @@
 ## The project:
 This project consists in an implementation of the U-Net with Temporal Attention Encoder (UTAE) model to evaluate the efficiency of temporal attention for budding yeast cells segmentation. More specifically, the task is to predict a mask that segment cells given a lab microscopic image, the model therefore being used for binary classification in our case.
 
-Images were provided by the Physics of Biological Systems Lab, with which we collaborated for the project.
+Images were provided by [Laboratory of the Physics of Biological Systems](https://www.epfl.ch/labs/lpbs/), with which we collaborated for the project.
 
 For extensive information about the project motivation, implementation and results, see the project report available in `project_report.pdf`
 
