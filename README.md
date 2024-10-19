@@ -39,7 +39,7 @@ For extensive information about the project motivation, implementation and resul
 - 📄 [train_argparse.py](train_argparse.py): Tunes a train UTAE model and saves predicted images in a newly created 📂 [result_augmented](result_augmented/) folder.
 
 - 📂 [plot_graph_result](plot_graph_result/): 
-    -  📄 [plot_results_ipynb](plot_graph_result/plot_results.ipynb) : Plots the results using the training from 📄 [train_params.py](train_params.py).
+    -  📄 [plot_results_ipynb](plot_graph_result/plot_results.ipynb) : Plots the graphic results shown in the report, using the training from our training files and especially 📄 [train_params.py](train_params.py).
 
 
 ## Prerequisites
