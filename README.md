@@ -32,9 +32,9 @@ For extensive information about the project motivation, implementation and resul
     - 📄 [weight_init.py*](model/weight_init.py): Initializes the model's parameters 
     - 📄 [utils.py](model/utils.py): Helps with dataset loading and image/results saving.
 
-- 📄 [train_params.py](train_params.py): Hyperparameters tuning of our UTAE model, storing the results in 📂 [results_augmented](results_augmented/).
+- 📄 [train_params.py](train_params.py): Hyperparameters tuning of our UTAE model, storing the results (log + importable model parameters) in a newly created 📂 [results_augmented](results_augmented/).
 
-- 📄 [train_argparse.py](train_argparse.py): Tunes a train UTAE model and saves predicted images on 📂 [result_augmented](result_augmented/) folder.
+- 📄 [train_argparse.py](train_argparse.py): Tunes a train UTAE model and saves predicted images in a newly created 📂 [result_augmented](result_augmented/) folder.
 
 - 📂 [plot_graph_result](plot_graph_result/): 
     -  📄 [plot_results_ipynb](plot_graph_result/plot_results.ipynb) : Plots the results using the training from 📄 [train_params.py](train_params.py).
